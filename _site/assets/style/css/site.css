@@ -833,9 +833,28 @@ or wrap each row of columns in a <div class="row"> */
   height: 0; }
 
 header {
-  position: relative;
-  margin: 0 auto;
-  width: 900px; }
+  position: fixed;
+  z-index: 10;
+  margin: 16em auto;
+  width: 100%; }
+
+h1 {
+  margin: 0em auto;
+  font-family: Avenir, "Avenir Next", Helvetica, Arial, sans-serif;
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+  border-bottom: 2px solid lime;
+  padding: 0.25em;
+  color: white;
+  letter-spacing: 0.25em;
+  mix-blend-mode: multiply;
+  text-shadow: 0px 0px 20px black;
+  text-stroke: 4px white;
+  font-size: 22px; }
+
+h1:first-child {
+  border-top: 2px solid lime; }
 
 .frame {
   width: 100%;
@@ -913,9 +932,12 @@ BACKGROUND VIDEO
 */
 #ytplayer {
   position: fixed;
-  width: 120%;
-  height: 120%;
-  overflow: hidden; }
+  width: 125%;
+  height: 125%;
+  overflow: hidden;
+  margin-top: -5%;
+  margin-left: -5%;
+  background-blend-mode: multiply; }
 
 .distorted {
   -webkit-transform: scale(2.5); }
@@ -950,9 +972,6 @@ INVITATION TEXT
     -webkit-transform: scale(2); } }
 body {
   background: black; }
-
-h1 {
-  color: white; }
 
 /*
 -----------------------------------
