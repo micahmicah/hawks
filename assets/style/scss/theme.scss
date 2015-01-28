@@ -1,0 +1,79 @@
+body{
+	background:black;
+}
+
+
+
+
+
+
+
+h1{
+	color:white;
+}
+
+
+
+
+
+
+
+/*
+-----------------------------------
+
+ANIMATIONS
+
+-----------------------------------
+
+*/
+
+// initial 
+.strobe-slow{
+		-webkit-animation:strobe 12s ease-in-out alternate infinite;
+
+}
+
+
+// for the crescendo
+.strobe-fast{
+		-webkit-animation:strobe 0.25s ease-in-out alternate infinite;
+
+}
+
+
+@-webkit-keyframes crawl{
+	0%{
+		top:4em;
+	}
+
+	100%{
+		top:0.25em;
+	}
+}
+
+
+// strobe keyframes
+@-webkit-keyframes strobe{
+	0%{
+		color:white;
+
+	}
+	25%{
+		color:red;
+
+	}
+
+	50%{
+		color:blue;
+
+	}
+
+	75%{
+		color:orange;
+	}
+
+	100%{
+		color:purple;
+	}
+}
+
